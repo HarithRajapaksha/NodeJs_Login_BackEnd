@@ -36,7 +36,8 @@ router.post('/signin',async(req, res)=>{
     const name=req.body.name
     const password=req.body.password
     //const role=req.body.role
-
+      //const role=req.body.role
+      
     //check username and pass with database data
 
     const user=await UserActivation.findOne({name});
